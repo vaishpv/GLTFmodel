@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'muliRegularFont';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afTLGLQ.woff2') format('woff2'),
+         url('https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afTLGKw.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'muliSemiBoldFont';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/mulish/v3/1Ptyg83HX_SGhgqO0yLcmjzUAuWexU1W8aevGw.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'muliBoldFont';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/mulish/v3/1Ptyg83HX_SGhgqO0yLcmjzUAuWexXRW8aevGw.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+} 
+
+body {
+    margin: 0px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.plezmo-logo {
+    cursor: pointer;
+}
+
+.controlsWrapperDiv {
+    height: 180px;
+    position: absolute;
+    top: calc(50% - 70px - 22.5px - 8px);
+    left: calc(100% - 45px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#zoomInButtonId {
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: white;
+}
+
+#zoomOutButtonId {
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: white;
+}
+
+#replayButtonId {
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#resetCamPosButtonId {
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#reverseButtonId {
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+@media (max-width: 767px) {
+    .nextPrevWrapperDiv {
+        height: 44px;
+        width: 100%;
+        position: absolute;
+        margin: 0px auto;
+        bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }   
+}
+
+@media (min-width: 768px) {
+    .nextPrevWrapperDiv {
+        height: 44px;
+        width: 340px;
+        margin: 0px auto;
+        position: absolute;
+        bottom: 120px;
+        left: calc(50% - 170px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+}
+
+.nextPrevButton {
+    width: 150px;
+    height: 44px;
+    font-family: "muliBoldFont";
+    color: #087c94;
+    font-size: 17px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: none;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.modelInfoWrapper {
+    width: calc(100% - 100px);
+    position: absolute;
+    margin: 10px 50px;
+}
+
+.modelDescr {
+    font-family: "muliRegularFont";
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    
+}
+
+#modelTitle {
+    font-family: "muliSemiBoldFont";
+    font-size: 24px;
+    color: teal;
+    text-align: center;
+    margin-left: calc(50% - 200px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #E9E9EA;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    font-family: "muliRegularFont";
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 7px;
+}
